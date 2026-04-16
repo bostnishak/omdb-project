@@ -12,11 +12,8 @@
 </head>
 <body>
     <div class="app">
-        <!-- Background Effects -->
         <div class="bg-gradient"></div>
         <div class="bg-noise"></div>
-
-        <!-- Header -->
         <header class="header">
             <div class="header-content">
                 <div class="logo">
@@ -29,8 +26,6 @@
                 <p class="tagline">Discover movies, explore details</p>
             </div>
         </header>
-
-        <!-- Search Section -->
         <main class="main">
             <section class="search-section">
                 <div class="search-container">
@@ -72,10 +67,7 @@
                     </div>
                 </div>
             </section>
-
-            <!-- Results Section -->
             <section class="results-section">
-                <!-- Loading State -->
                 <div id="loadingState" class="state-container" style="display: none;">
                     <div class="loader">
                         <div class="loader-ring"></div>
@@ -84,8 +76,6 @@
                     </div>
                     <p class="state-text">Searching movies...</p>
                 </div>
-
-                <!-- Empty State -->
                 <div id="emptyState" class="state-container">
                     <div class="empty-illustration">
                         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,8 +91,6 @@
                     <p class="state-text">Search for a movie to get started</p>
                     <p class="state-subtext">Try searching "Inception", "The Matrix", or "Interstellar"</p>
                 </div>
-
-                <!-- Error State -->
                 <div id="errorState" class="state-container" style="display: none;">
                     <div class="error-icon-wrapper">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,11 +101,7 @@
                     <p id="errorMessage" class="state-text error-text">Movie not found</p>
                     <p class="state-subtext">Please try a different search term</p>
                 </div>
-
-                <!-- Results Grid -->
                 <div id="resultsGrid" class="results-grid"></div>
-
-                <!-- Pagination -->
                 <div id="pagination" class="pagination" style="display: none;">
                     <button id="prevPage" class="page-btn" disabled>
                         <svg viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -131,8 +115,6 @@
                 </div>
             </section>
         </main>
-
-        <!-- Movie Detail Modal -->
         <div id="movieModal" class="modal-overlay" style="display: none;">
             <div class="modal">
                 <button id="closeModal" class="modal-close" title="Close">
@@ -187,13 +169,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
         <footer class="footer">
             <p>Powered by <a href="https://www.omdbapi.com/" target="_blank" rel="noopener noreferrer">OMDB API</a></p>
         </footer>
     </div>
-
     <script src="app.js?v=2"></script>
 </body>
 </html>
